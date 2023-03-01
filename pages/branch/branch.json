@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "tabs": "../../../component/fund-supply-tab/fund-supply-tab",
+    "dialog": "../../../component/dialog/index"
+  },
+  "navigationBarTitleText": "北京分行"
+
+}
+

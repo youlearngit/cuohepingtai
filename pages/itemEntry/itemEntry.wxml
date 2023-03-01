@@ -1,0 +1,56 @@
+<view class="counten_boy">
+  <view class="enroll_lbcp">
+    <view class="enrllo_xzcp">项目录入</view>
+    <view class="enrllo_cplb">请选择发布的产品类别</view>
+  </view>
+
+  <view class="investment">
+
+  <view style="display: flex;align-items: center;justify-content: space-around;padding: 60rpx;">
+
+  <view>
+  <view style="font-size:26rpx;color:#d1812d">我想要</view>
+
+  <view style="display: flex;align-items: center;">
+  <view style="font-size:46rpx;color:#d1812d;font-weight: bold;">投资</view>
+  <image src="/static/images/jump_yellow.png" style="width: 30rpx;height: 30rpx;margin-left: 16rpx;"></image>
+  </view>
+</view>
+
+  <view style="width: 2rpx;height: 117rpx;">
+  <image src="/static/images/entry_border.png" style="width: 50rpx;height: 117rpx;" mode="widthFix"></image>
+  </view>
+
+  <view style="display: flex;flex-direction: column;align-items: center;justify-content: center;">
+  <image src="/static/images/investment_intention.png" style="width: 60rpx;height: 60rpx;" mode="widthFix"></image>
+  <view style="font-size: 24rpx;color: #df964a;">我有一个</view>
+  <view style="font-size: 24rpx;color: #df964a;font-weight: bold;">投资意向</view>
+
+  </view>
+
+  <view style="display: flex;flex-direction: column;align-items: center;justify-content: center;">
+  <image src="/static/images/investment_project.png" style="width: 60rpx;height: 60rpx;" mode="widthFix"></image>
+
+  <view style="font-size: 24rpx;color: #df964a;">我有一个</view>
+  <view style="font-size: 24rpx;color: #df964a;font-weight: bold;">投资项目</view>
+  </view>
+</view>
+  </view>
+
+
+
+
+  <view class="financing">
+
+<view style="padding: 80rpx;">
+<view style="font-size:26rpx;color:#356ab6">我想要</view>
+
+<view style="display: flex;align-items: center;">
+<view style="font-size:46rpx;color:#356ab6;font-weight: bold;">融资</view>
+<image src="/static/images/jump_blue.png" style="width: 30rpx;height: 30rpx;margin-left: 16rpx;"></image>
+</view>
+</view>
+</view>
+  
+  
+</view>

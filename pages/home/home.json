@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "tabs": "../../../component/fu-tab/fu-tab"
+  }
+}
+

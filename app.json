@@ -1,0 +1,87 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/fundSupply/fundSupply",
+    "pages/proposedProject/proposedProject",
+    "pages/branch/branch",
+    "pages/capitalDemand/capitalDemand",
+    "pages/capitalDemandScreen/capitalDemandScreen",
+    
+
+
+    "pages/login/login",
+   
+    "pages/perfect/perfect",
+    "pages/itemEntry/itemEntry",
+    "pages/my/my",
+   
+   
+   
+    "pages/releasedeal/releasedeal",
+    "pages/registration/registration",
+    "pages/intentionClass/intentionClass",
+    "pages/listClass/listClass",
+   
+    "pages/search/search",
+    "pages/searchResult/searchResult",
+  
+    
+    "pages/screenwed/screenwed",
+   
+    
+  
+    "pages/userGreement/userGreement"
+  ],
+  "subpackages": [
+    {
+      "root": "subpack",
+      "pages": [
+        "webhtml/web",
+        "success/success",
+        "error/error"
+      ]
+    }
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "撮合平台",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true,
+    "navigationStyle": "default",
+    "pageOrientation": "auto"
+  },
+  "tabBar": {
+    "color": "#9299A7",
+    "selectedColor": "#4586E6",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "custom": true,
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "iconPath": "/assets/tabBar/home.png",
+        "selectedIconPath": "/assets/tabBar/home_active.png",
+        "text": "首页"
+      },
+      {
+        "iconPath": "/assets/tabBar/home_active.png",
+        "selectedIconPath": "/assets/tabBar/home_active.png",
+        "pagePath": "pages/itemEntry/itemEntry",
+        "text": "交易发布"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "iconPath": "/assets/tabBar/my.png",
+        "selectedIconPath": "/assets/tabBar/my_active.png",
+        "text": "我的"
+      }
+    ]
+  },
+  
+  "navigateToMiniProgramAppIdList": [
+    "wxcd618295301aa719"
+  ],
+  "debug": false,
+  "sitemapLocation": "sitemap.json"
+}

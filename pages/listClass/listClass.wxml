@@ -1,0 +1,134 @@
+<view class="meinibb">
+
+  <view class="meinImg">
+    <image src="/static/images/intention_class.png" mode="widthFix" class="correlationDealImg"></image>
+
+    <view class="imgBox_text">名单类</view>
+
+  </view>
+
+
+  <view class="cueemini">
+
+    <view class="filedss">
+      <view class="project-name">资方名称(必填)</view>
+      <view class="entbod">
+        <textarea placeholder-class="place-holder" placeholder="请输入资方企业名称 " name="introduction" maxlength='20' bindinput='limit' value="{{remark}}" style="font-size: 14px;" />
+      </view>
+    </view>
+
+    <view class="filedss">
+      <view class="project-name" style="margin-top: 30rpx;">项目名称</view>
+      <view class="entbod">
+        <textarea placeholder-class="place-holder" placeholder="请输入项目名称" name="introduction" maxlength='20' bindinput='limit' value="{{remark}}" style="font-size: 14px;" />
+        <!-- 显示字数 -->
+        <view class="clear"><text style="color: #ccc; font-size: 14px; float: right; margin-right: 2%;">{{current}} / {{max}}</text></view>
+      </view>
+    </view>
+
+
+
+
+    <view class="filed">
+      <view class="title">所在地(必填)</view>
+      <view class="action arrow">
+        <picker class="" mode="region" range="{{arr}}" value="" bindchange="chooseAddress">
+          <input type="text" placeholder="请选择" disabled="{{true}}" value="{{address}}" placeholder-class="placeholder" />
+        </picker>
+        <image src="/static/images/right.png" class="valig" mode="widthFix" />
+      </view>
+    </view>
+
+    
+
+    
+    <!-- 金额 -->
+    <view class="filed">
+      <view class="title">投资规模</view>
+      <input class="myinyyds" type="text" placeholder="请输入投资规模" style="width:350rpx ;" />
+
+    </view>
+
+    <view class="introduction">
+      <view class="title" style="margin-bottom: 20rpx;">资方介绍</view>
+      <view class="entbod">
+        <textarea placeholder-class="place-holder" placeholder="请输入资方介绍 " name="introduction" maxlength='20' bindinput='limit' value="{{remark}}" style="font-size: 14px;height: 268rpx;" />
+
+      </view>
+    </view>
+
+
+
+
+
+
+  </view>
+
+  <button class="myqrfb" bindtap="creditdebt" data-="">确认发布</button>
+  <view style="height: 50rpx;"></view>
+
+</view>
+
+
+<view class="{{showInvestmentArea ? 'container page' : ''}}" data-weui-theme="{{theme}}">
+  <view class="mobile {{showInvestmentArea ? 'active' : ''}}">
+    <view class="{{theme === 'dark' ? 'left dark-bg' : 'left'}}">
+
+      <view class="release">
+        <view class="source_title">拟投资区域</view>
+        <view class="items">
+          <view wx:for="{{busitype}}" class="busieess {{isSelect == item.id ? 'busactive' : ''}}" data-id="{{item.id}}" bindtap="Fbundselect" wx:key="index">
+            {{item.name}}
+            <image src="/static/images/check.png" wx:if="{{isSelect == item.id}}" class="check"></image>
+          </view>
+        </view>
+      </view>
+
+
+
+      <view class="btnview">
+        <view class="determine" bindtap="confirmInvestmentArea">确定</view>
+      </view>
+    </view>
+
+  </view>
+</view>
+
+<view class="{{showInvestmentIndustry ? 'container page' : ''}}" data-weui-theme="{{theme}}">
+  <view class="mobile {{showInvestmentIndustry ? 'active' : ''}}">
+    <view class="{{theme === 'dark' ? 'left dark-bg' : 'left'}}">
+
+      <view class="release">
+        <view class="source_title">拟投资行业</view>
+
+        <view class="search">
+          <image src="/static/images/investment_search.png" style="width: 45rpx;height: 45rpx;margin-left: 30rpx;" mode="widthFix"></image>
+          <input type="text" placeholder="搜索" placeholder-style="font-size:28rpx;color:#a5abbb;margin-left:10rpx" style="font-size: 28rpx;" />
+        </view>
+
+
+        <view wx:for="{{3}}">
+          <view style="font-size: 28rpx;color: #444a6b;background:#f6f7ff;padding: 10rpx 30rpx;"><text style="margin-right: 11rpx;">A</text>农，牧，林，渔业</view>
+
+          <view style="margin: 20rpx 25rpx;">
+
+            <view style="font-size:26rpx;color:#6d7278;padding-bottom: 20rpx;padding-left: 30rpx;" wx:for="{{3}}" class="{{isSelectIndustry == index ? 'industry-active' : ''}}" bindtap="chooseIndustry" data-index="{{index}}">林业与伐木业</view>
+
+          </view>
+
+        </view>
+
+
+      </view>
+
+
+
+
+
+      <view class="btnview">
+        <view class="determine" bindtap="confirmIndustry">确定</view>
+      </view>
+    </view>
+
+  </view>
+</view>
