@@ -5,8 +5,6 @@ const YTURL = 'https://wxapptest.jsbchina.cn:9629/wxgatewaysit/';
 // const YTURL = 'https://appservice.jsbchina.cn/wxgatewayuat/';
 const requestYT = (options = {}) => {
   let { url, data, ifEncrypt = true } = options;
-
-  console.log(1234567891011111111)
   // let info = JSON.parse(data)
   // info.OPEN_ID=wx.getStorageSync('wxlogininfo').OPEN_ID || ''
   // console.log(info)
